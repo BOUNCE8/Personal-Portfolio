@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.site-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)),
+    url('https://unsplash.it/1500/1500');
+}
+
+.site-container-inner {
+  /* background-color: plum; */
+  width: 85%;
+  margin: 0rem auto;
+}
+
+.hamburger-container {
+  height: 3.25rem;
+  width: 5%;
+  /* border: 2px solid red; */
+  position: fixed;
+  left: 1.25%;
+  top: 1rem;
+}
+
+.hamburger-container-inner {
+  width: 100%;
+  height: 100%;
+  /* background: paleturquoise; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.menu-toggle .line {
+  background-color: #eee;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+}
+
+.social-icon-container {
+  width: 5%;
+  height: 10rem;
+  /* border: solid 2px yellow; */
+  position: fixed;
+  right: 1.25%;
+  top: 1rem;
+}
+
+.social-icon-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  /* border: red solid 1px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon i {
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sticky-nav-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.nav-menu {
+  line-height: 7.5rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+#hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-banner {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10rem;
+  width: 35rem;
+  position: absolute;
+}
+
+.hero-title {
+  color: #eee;
+  font-size: 6.2em;
+  text-align: center;
+  line-height: 0.9em;
+}
+
+.underline {
+  border: 4px solid #000;
+  width: 31rem;
+  margin: 0 auto;
+}
+
+.hero-title-text {
+  color: #eee;
+  word-spacing: 3.5rem;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#about-section {
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(187, 187, 187));
+}
+
+#skills-section {
+  background-color: lightskyblue;
+}
+
+#work-section {
+  height: 100%;
+  /* background-color: navajowhite; */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  width: 100%;
+  height: 33.3%;
+  /* border: 2px solid darkorange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 350px;
+  height: 98%;
+}
+
+#projectImage-1 {
+  background-image: url(/Images/ScreenShot/KaycieKyel-Thumbnail.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#projectImage-2 {
+  background-image: url(/Images/ScreenShot/AndrewsFishBar-Thumbnail.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#projectImage-3 {
+  background-image: url(/Images/ScreenShot/Netflix-Thumbnail.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

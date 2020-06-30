@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha Portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/fullpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="site-container">
+      <div class="hamburger-container">
+        <div class="hamburger-container-inner">
+          <div class="menu-toggle" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dropDownMenu" id="menu">
+        <nav class="mainNavMenu">
+          <ul class="nav-menu">
+            <li><a class="link" href="#firstPage">Home</a></li>
+            <li><a class="link" href="#secondPage">Recent Work</a></li>
+            <li><a class="link" href="#thirdPage">skills</a></li>
+            <li>
+              <a class="link" href="#forthPage">About<br />Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <header>
+        <div class="sticky-nav-container">
+          <nav class="sticky-nav-menu">
+            <ul class="nav-menu">
+              <li><a class="link" href="#firstPage">Home</a></li>
+              <li><a class="link" href="#secondPage">My Work</a></li>
+              <li><a class="link" href="#thirdPage">Skills</a></li>
+              <li><a class="link" href="#forthPage">About Me</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="social-icon-container">
+          <div class="social-icon-inner">
+            <div class="social-icon">
+              <a href="https://github.com/BOUNCE8"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="social-icon">
+              <a href="mailto:808marshall808@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+            <div class="social-icon">
+              <a><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="site-container-inner" id="fullpage">
+        <section class="section" id="hero-section">
+          <div class="inner-section" id="part1">
+            <div class="hero-banner">
+              <h1 class="hero-title-text">
+                visual designer &amp;<br />
+                frontend developer
+              </h1>
+            </div>
+          </div>
+          <div class="inner-section" id="part2">
+            <div class="contactContainer">
+              <div class="closeBtn"><i class="fas fa-times"></i></div>
+              <div class="contactContainer-form">
+                <form>
+                  <label for="firstname">Name:</label><br />
+                  <input type="text" /><br />
+                  <label for="lastname">Email:</label><br />
+                  <input type="text" /><br />
+                  <label for="subject">Subject:</label><br />
+                  <input type="text" /><br />
+                  <label for="message">Message:</label><br />
+                  <textarea></textarea>
+                  <div class="btn-box">
+                    <button>
+                      send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- <div class="heroProcessContainer">
+              <div class="processStage" id="stage-1"><p>research</p></div>
+              <div class="processStage" id="stage-2"><p>design</p></div>
+              <div class="processStage" id="stage-3"><p>develop</p></div>
+              <div class="processStage" id="stage-4"><p>review</p></div>
+            </div> -->
+            <div class="heroNavigation">
+              <h2>
+                I develop responsive, user friendly and engaging websites for startups and
+                businesses
+              </h2>
+              <div class="buttonContainer">
+                <button>
+                  <a href="#secondPage">
+                    <p>
+                      my work
+                    </p>
+                  </a>
+                </button>
+                <button id="contactBtn">
+                  <p>
+                    contact me
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="work-section">
+          <div class="work-section-container">
+            <div class="titleContainer">
+              <h2>recent work</h2>
+            </div>
+            <div class="project-container">
+              <div class="project">
+                <div class="project-image" id="projectImage-1">
+                  <h1>Kaycie Kyles Salon</h1>
+                </div>
+              </div>
+
+              <div class="project" id="projectContainer-2">
+                <div class="project-image" id="projectImage-2">
+                  <h1>Andrews Fish Bar</h1>
+                </div>
+              </div>
+              <div class="project" id="projectContainer-3">
+                <div class="project-image" id="projectImage-3">
+                  <h1>Netflix Landing Page</h1>
+                </div>
+              </div>
+
+              <div class="project" id="projectContainer-4">
+                <div class="project-image" id="projectImage-4"></div>
+              </div>
+
+              <div class="project" id="projectContainer-5">
+                <div class="project-image" id="projectImage-5"></div>
+              </div>
+
+              <div class="project" id="projectContainer-6">
+                <div class="project-image" id="projectImage-6"></div>
+              </div>
+            </div>
+            <div class="modal">
+              <div class="modal-content">
+                <div class="modal-content-info" id="projectImage-1-modal">
+                  <div class="modalProject" id="modalProject-1">
+                    <div class="infoContainer">
+                      <div class="project-bio">
+                        <h3>modern beauty salon</h3>
+                        <p>
+                          I was tasked with re-vamping this beauty treatment website from the ground
+                          up as the previous site's features were not coded but in fact comprised
+                          mostly of images rather than actual code that could not be updated.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>challenge:</h4>
+                        <p>
+                          Re-create this site with a modern look that reflected the brand and would
+                          be an extension of the business.
+                        </p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>solution:</h4>
+                        <p>
+                          Working closely with the client I created a new color pallete and
+                          re-structured the site to enable effortless browsing.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>technology:</h4>
+                        <p>HTML, Sass, JavaScript &amp; Figma</p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>outcome:</h4>
+                        <p>
+                          A modern site that's dynamic, easily navigatable and reflects the salons
+                          high standards
+                        </p>
+                      </div>
+                      <div class="icon-container">
+                        <div class="skill-icon"><i class="fab fa-figma" id="icon-6"></i></div>
+                        <div class="skill-icon"><i class="fab fa-html5" id="icon-1"></i></div>
+                        <div class="skill-icon"><i class="fab fa-css3-alt" id="icon-2"></i></div>
+                        <div class="skill-icon"><i class="fab fa-js" id="icon-4"></i></div>
+                        <a href="http://www.kayciekyle.com/"><button>View</button></a>
+                        <a href="https://github.com/BOUNCE8/Kaycie-Kyle-Site"
+                          ><button>Git</button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-content-info" id="projectImage-2-modal">
+                  <div class="modalProject" id="modalProject-2">
+                    <div class="infoContainer">
+                      <div class="project-bio">
+                        <h3>renowned local chip shop</h3>
+                        <p>
+                          This popular local chip shop wanted their very own platform to showcase
+                          their menu and extend their reach into the wider community. Previously
+                          they mainly relied on word of mouth and their facebook page to advertise
+                          their business.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>challenge:</h4>
+                        <p>
+                          Create a responsive site that would be easy to navigate (especially for
+                          the elderly), showcase menu and contact details. The client also requested
+                          a section to give some insight into the shops history and community work.
+                        </p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>solution:</h4>
+                        <p>
+                          Keeping those less technology savy in mind, I opted for a simple layout on
+                          a one page format for ease of access.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>technology:</h4>
+                        <p>HTML, Sass, JavaScript &amp; Figma</p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>outcome:</h4>
+                        <p>
+                          This website is easy to navigate whether being viewed on a mobile or
+                          desktop.
+                        </p>
+                      </div>
+                      <div class="icon-container">
+                        <div class="skill-icon"><i class="fab fa-figma" id="icon-6"></i></div>
+                        <div class="skill-icon"><i class="fab fa-html5" id="icon-1"></i></div>
+                        <div class="skill-icon"><i class="fab fa-css3-alt" id="icon-2"></i></div>
+                        <div class="skill-icon"><i class="fab fa-js" id="icon-4"></i></div>
+                        <a href="https://github.com/BOUNCE8/Andrew-Fish-Bar"
+                          ><button>Git</button></a
+                        >
+                        <a href="http://www.andrewsfishbar.co.uk/"><button>View</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-content-info" id="projectImage-3-modal">
+                  <div class="modalProject" id="modalProject-3">
+                    <div class="infoContainer">
+                      <div class="project-bio">
+                        <h3>Netflix Landing Page</h3>
+                        <p>
+                          I wanted to test my CSS skills and accurately re-create the netflix
+                          landing page.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>challenge:</h4>
+                        <p>
+                          Accurately re-create the netflix landing page.
+                        </p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>solution:</h4>
+                        <p>
+                          Keeping those less technology savy in mind, I opted for a simple layout on
+                          a one page format for ease of access.
+                        </p>
+                      </div>
+
+                      <div class="fourPoints">
+                        <h4>technology:</h4>
+                        <p>HTML, CSS &amp; Figma</p>
+                      </div>
+                      <div class="fourPoints">
+                        <h4>outcome:</h4>
+                        <p>
+                          An accurate replication of the landing page.
+                        </p>
+                      </div>
+                      <div class="icon-container">
+                        <div class="skill-icon"><i class="fab fa-html5" id="icon-1"></i></div>
+                        <div class="skill-icon"><i class="fab fa-css3-alt" id="icon-2"></i></div>
+                        <a href="https://github.com/BOUNCE8/Netflix-Clone"><button>Git</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="modalCloseBtn" id="modalCloseBtn">close</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skills-section">
+          <div class="skill-section-container">
+            <div class="myProcessTimeline">
+              <h1>my current skills</h1>
+              <div class="process" id="stage1">
+                <div class="stages-text">
+                  <div class="firstStage">
+                    <h2 class="stages">front-end</h2>
+                  </div>
+                  <div class="stages-subtext">
+                    <div>
+                      <p class="stages">Languages</p>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>Javascript</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p class="stages">Dev Tools</p>
+                      <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Bootstrap</li>
+                        <li>Codepen</li>
+                        <li>Chrome Inspector</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="process" id="stage3">
+                <div class="stages-text">
+                  <div class="firstStage">
+                    <h2 class="stages">back-end</h2>
+                    <!-- <p>
+                      "Behind every great site, is a greater back-end". I enjoy optimizing code to
+                      ensure I can get the best performance from a project.
+                    </p> -->
+                  </div>
+                  <div class="stages-subtext">
+                    <div>
+                      <p class="stages">Languages</p>
+                      <ul>
+                        <li>Node</li>
+                        <li>Redux</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <p class="stages">Dev Tools</p>
+                      <ul>
+                        <li>Github</li>
+                        <li>Gitbash</li>
+                        <li>Terminal</li>
+                        <li>Postman</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about-section">
+          <div class="more-info">
+            <h2 class="deskTopView">design</h2>
+            <p>
+              I like to layout the framework first in
+              <span class="highlight" id="icon-6">Figma</span> to produce a dynamic mock-up that can
+              showcase a products functionality across multiple platforms before recreating it in
+              code. Figma allows for pixel perfect transition from idea to concept and concept to
+              reality.
+            </p>
+          </div>
+          <div class="aboutMe-container">
+            <div class="intro-container">
+              <h2 class="deskTopView" id="introTitle">
+                Hi. I'm Marshall,<br />nice to meet you.<br />How can I help?
+              </h2>
+              <h2 class="mobView" id="introTitle">
+                Hi. I'm Marshall, nice to meet you.<br />
+                How can I help?
+              </h2>
+              <!-- <h2 id="introTitle">
+                Hi. I'm Marshall, nice to meet you. How can I help?
+              </h2> -->
+              <p>
+                I'm a freelance frontend web developer currently working out of London. I am
+                passionate about marrying great design with seemless functionality to create unique
+                customer experiences.
+              </p>
+            </div>
+          </div>
+          <div class="more-info">
+            <h2 class="deskTopView">front<br />end</h2>
+            <!-- <h2 class="mobView">front end</h2> -->
+            <p>
+              I am passionate about front-end development as this is the essential bridge between
+              the user and the product, idea or service. My tools of choice for this task are
+              <span class="highlight" id="icon-1">HTML5</span>,
+              <span class="highlight" id="icon-3">SASS</span> and
+              <span class="highlight" id="icon-4">Javascript</span>.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/JS/fullpage.min.js"></script>
+    <script src="/JS/function.js"></script>
+  </body>
+</html>
