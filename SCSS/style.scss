@@ -642,22 +642,44 @@ ul {
             border-radius: 10px;
             background: #eee;
 
-            .modalCloseBtn {
-              font-size: 1.125em;
-              border-radius: 10px;
-              height: 2.5rem;
-              width: 3.5rem;
-              // float: right;
-              font-size: 1.5em;
-              text-align: center;
-              cursor: pointer;
+            .closeBtnContainer {
+              width: 100%;
+              height: 2.25rem;
+              background-color: $main-accent-color;
+              border-radius: 0px 0px 10px 10px;
               position: absolute;
-              bottom: 5px;
-              left: 50%;
-              transform: translateX(-50%);
-              z-index: 100;
-              // background-color: $main-accent-color;
+              bottom: 0px;
+              // Check this out, might not include
+              .modalCloseBtn {
+                color: #eee;
+                text-align: center;
+                font-size: 1.125em;
+                text-align: center;
+                cursor: pointer;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                z-index: 100;
+              }
             }
+
+            // .modalCloseBtn {
+            //   font-size: 0.95em;
+            //   border-radius: 10px;
+            //   // height: 2.5rem;
+            //   width: 3.5rem;
+            //   // float: right;
+            //   font-size: 1.5em;
+            //   text-align: center;
+            //   cursor: pointer;
+            //   position: absolute;
+            //   bottom: 5px;
+            //   left: 50%;
+            //   transform: translateX(-50%);
+            //   z-index: 100;
+            //   // background-color: $main-accent-color;
+            // }
 
             .modal-content-info {
               position: absolute;
@@ -984,7 +1006,6 @@ ul {
     .hamburger-container {
       height: 40px;
       width: 50px;
-      // border: 2px solid red;
       position: fixed;
       right: 0.3rem;
       top: 0.2rem;
@@ -994,7 +1015,7 @@ ul {
       &-inner {
         width: 100%;
         height: 100%;
-        /* background: paleturquoise; */
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1004,7 +1025,6 @@ ul {
           cursor: pointer;
           z-index: 100;
           display: inline-block;
-          // background-color: $main-accent-color;
           border-radius: 5px;
           cursor: pointer;
 
@@ -1025,19 +1045,16 @@ ul {
       bottom: 0;
       z-index: 1;
       display: none;
-      // border: 2px solid purple;
 
       .mainNavMenu {
         height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        // border: solid yellow 2px;
-        // display: none;
 
         .nav-menu {
           display: flex;
-          // display: none;
+
           flex-direction: column;
           justify-content: space-evenly;
           height: 50%;
@@ -1059,7 +1076,6 @@ ul {
     .social-icon-container {
       width: 5%;
       height: 10rem;
-      // border: solid 2px yellow;
       position: fixed;
       right: 1.25%;
       top: 1rem;
@@ -1070,12 +1086,10 @@ ul {
         width: 100%;
         display: flex;
         flex-direction: column;
-        //   border: solid 2px pink;
 
         .social-icon {
           width: 100%;
           height: 100%;
-          // border: red solid 1px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1098,7 +1112,6 @@ ul {
 
       #hero-section {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         background-image: url('https://unsplash.it/1250/1500');
@@ -1166,7 +1179,6 @@ ul {
                 }
 
                 button {
-                  // margin: 0.5rem 0rem 0.5rem 0rem;
                   width: 75px;
                   margin: 0px auto;
                   justify-content: center;
@@ -1186,8 +1198,6 @@ ul {
           height: 50%;
           position: relative;
           display: inline-block;
-          border: yellow 2px solid;
-          // background-image: url('https://unsplash.it/650/650');
 
           .hero-banner {
             top: 70%;
@@ -1198,11 +1208,8 @@ ul {
             background-color: $main-accent-color;
             background-image: $light-gradient-overlay;
             border-radius: 5px;
-            // margin: 0rem 1rem;
-            border: 2px red solid;
 
             #heroTitle {
-              // color: #eee;
               font-size: 1em;
               text-align: center;
               line-height: 0.9em;
@@ -1230,13 +1237,11 @@ ul {
         #part2 {
           width: 100%;
           height: 49%;
-          border: 2px solid purple;
           display: inline-block;
           position: relative;
 
           .heroNavigation {
             width: 200px;
-            // height: 20%;
             position: absolute;
             bottom: 10%;
             left: 50%;
@@ -1245,7 +1250,6 @@ ul {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            // border: solid 2px pink;
             width: 300px;
 
             h2 {
@@ -1280,14 +1284,11 @@ ul {
       #about-section {
         width: 100%;
         height: 100%;
-        // background-image: $default-background-color;
-        // border-right: $main-accent-color 2px solid;
 
         .aboutMe-container {
           background-color: rgba(0, 0, 0, 0.85);
           width: 400px;
           margin: 0rem auto;
-          // padding-right: 0rem;
 
           .intro-container {
             display: flex;
@@ -1303,7 +1304,6 @@ ul {
               color: #eee;
               text-align: center;
               padding: 0.25rem 0.5rem;
-              // margin-right: 1.5rem;
             }
 
             p {
@@ -1321,7 +1321,6 @@ ul {
         }
         .more-info {
           width: 480px;
-          // height: 100px;
           margin: 0.25rem auto;
           padding: 0.5rem 0.5rem;
           display: flex;
@@ -1329,15 +1328,12 @@ ul {
           justify-content: center;
           align-items: center;
           color: #eee;
-          // border: solid 2px purple;
 
           h2 {
             font-size: 1.25em;
             text-align: center;
             margin: 0rem 0rem 0rem 0rem;
             text-transform: uppercase;
-            // text-orientation: upright;
-            // writing-mode: vertical-lr;
             color: $newBlack;
           }
           p {
@@ -1347,8 +1343,6 @@ ul {
         }
       }
       #skills-section {
-        // background-image: $default-background-color;
-        // border-right: $main-accent-color 2px solid;
         display: flex;
 
         .skill-section-container {
@@ -1357,7 +1351,6 @@ ul {
           display: flex;
           justify-content: center;
           align-items: center;
-          // border: 2px solid salmon;
 
           .myProcessTimeline {
             position: relative;
@@ -1369,12 +1362,9 @@ ul {
             justify-content: center;
             align-items: center;
             padding: 0.5rem 0rem;
-            // background-color: rgba(238, 238, 238, 0.445);
-            // border: solid 2px blue;
 
             h1 {
               font-size: 1.5em;
-              // width: 100%;
               display: block;
               text-transform: uppercase;
               color: #eee;
@@ -1515,33 +1505,37 @@ ul {
 
           .modal-content {
             position: relative;
-            width: 90%;
-            height: 90%;
+            width: 95%;
+            height: 95%;
             border-radius: 10px;
             background: #eee;
 
-            .modalCloseBtn {
-              font-size: 1.125em;
-              border-radius: 10px;
-              height: 2.5rem;
-              width: 3.5rem;
-              // float: right;
-              font-size: 1.5em;
-              text-align: center;
-              cursor: pointer;
+            .closeBtnContainer {
+              width: 100%;
+              height: 2.25rem;
+              background-color: $main-accent-color;
+              border-radius: 0px 0px 10px 10px;
               position: absolute;
-              bottom: 5px;
-              left: 50%;
-              transform: translateX(-50%);
-              z-index: 100;
-              // background-color: $main-accent-color;
+              bottom: 0px;
+              // Check this out, might not include
+              .modalCloseBtn {
+                color: #eee;
+                text-align: center;
+                font-size: 1.125em;
+                text-align: center;
+                cursor: pointer;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                z-index: 100;
+              }
             }
 
             .modal-content-info {
               position: absolute;
               top: 0;
               display: flex;
-              // justify-content: space-between;
               align-items: center;
               width: 100%;
               height: 100%;
@@ -1551,10 +1545,8 @@ ul {
               display: none;
 
               .modalProject {
-                // display: flex;
                 justify-content: space-evenly;
                 align-items: center;
-                // border: 1px solid red;
                 height: 100%;
 
                 .infoContainer {
@@ -1562,7 +1554,6 @@ ul {
 
                   .project-bio {
                     padding-bottom: 0.5rem;
-                    // border: 1px solid purple;
                     h3 {
                       text-transform: capitalize;
                       text-align: center;
@@ -1578,6 +1569,7 @@ ul {
                       border-bottom: 1.5px solid $newBlack;
                       padding: 0.25rem 0.5rem;
                       text-align: justify;
+                      display: none;
                     }
                   }
 
@@ -1605,10 +1597,8 @@ ul {
                   width: 100%;
                   height: 50px;
                   display: flex;
-                  // flex-direction: column;
                   align-items: center;
                   justify-content: space-evenly;
-                  // border: 1px solid yellow;
 
                   button {
                     width: 50px;
@@ -1651,8 +1641,6 @@ ul {
             margin-top: 1.25rem;
             margin-bottom: 0.4rem;
 
-            // border: solid pink 2px;
-
             h2 {
               font-size: 1.5em;
               text-align: center;
@@ -1676,7 +1664,6 @@ ul {
             .project {
               width: 175px;
               height: 50px;
-              // border: 2px solid rgba(255, 255, 255, 0.6);
               display: block;
               justify-content: space-evenly;
               align-items: center;
@@ -1684,12 +1671,10 @@ ul {
               cursor: pointer;
               margin: 12px 0px;
               position: relative;
-              // border: yellow 2px solid;
 
               .project-image {
                 width: 100%;
                 height: 100%;
-                // display: none;
                 opacity: 1;
               }
 
@@ -1707,7 +1692,6 @@ ul {
                   color: #eee;
                   font-size: 1.25em;
                 }
-                // z-index: 2;
               }
 
               .project-image > * {
@@ -1727,7 +1711,6 @@ ul {
               }
 
               #projectImage-1 {
-                // background-image: $light-gradient-overlay;
                 background-image: url(/Images/ScreenShot/KaycieKyle/nails-2.jpg);
                 background-color: pink;
                 background-position: 0% 60%;
@@ -1782,7 +1765,6 @@ ul {
                 justify-content: space-evenly;
                 width: 10%;
                 height: 100%;
-                // border: solid 2px green;
                 align-items: center;
 
                 .skill-icon {
@@ -2068,9 +2050,9 @@ ul {
           // background-image: url('https://unsplash.it/650/650');
 
           .hero-banner {
-            top: 50%;
+            top: 60%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -60%);
             width: 60%;
             position: absolute;
             background-color: $main-accent-color;
@@ -2115,7 +2097,7 @@ ul {
           .heroNavigation {
             // height: 20%;
             position: absolute;
-            bottom: 25%;
+            bottom: 30%;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -2399,30 +2381,55 @@ ul {
             .modal-content {
               position: relative;
               width: 90%;
-              height: 60%;
+              height: 45%;
               border-radius: 10px;
               background: #eee;
 
-              .modalCloseBtn {
-                font-size: 1.125em;
-                border-radius: 10px;
+              .closeBtnContainer {
+                width: 100%;
                 height: 2.5rem;
-                width: 3.5rem;
-                // float: right;
-                font-size: 1.5em;
-                text-align: center;
-                cursor: pointer;
+                background-color: $main-accent-color;
+                border-radius: 0px 0px 10px 10px;
                 position: absolute;
-                bottom: 5px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 100;
-                // background-color: $main-accent-color;
+                bottom: 0px;
+
+                .modalCloseBtn {
+                  font-size: 1.125em;
+                  color: #eee;
+                  border-radius: 10px;
+                  font-size: 1.5em;
+                  text-align: center;
+                  cursor: pointer;
+                  position: absolute;
+                  bottom: 5px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  z-index: 100;
+                  // background-color: $main-accent-color;
+                }
               }
+
+              // .modalCloseBtn {
+              //   font-size: 1.125em;
+              //   border-radius: 10px;
+              //   height: 2.5rem;
+              //   width: 3.5rem;
+              //   // float: right;
+              //   font-size: 1.5em;
+              //   text-align: center;
+              //   cursor: pointer;
+              //   position: absolute;
+              //   bottom: 5px;
+              //   left: 50%;
+              //   transform: translateX(-50%);
+              //   z-index: 100;
+              //   // background-color: $main-accent-color;
+              // }
 
               .modal-content-info {
                 position: absolute;
                 top: 0;
+                left: 0;
                 display: flex;
                 // justify-content: space-between;
                 align-items: center;
@@ -2431,6 +2438,7 @@ ul {
                 padding: 0rem 0rem;
                 border-radius: 10px;
                 background-color: $default-background-color;
+                border: 2px solid salmon;
                 display: none;
 
                 .modalProject {
@@ -2445,6 +2453,9 @@ ul {
 
                     .project-bio {
                       padding-bottom: 0.5rem;
+                      margin-bottom: 0.5rem;
+                      text-align: center;
+
                       // border: 1px solid purple;
                       h3 {
                         text-transform: capitalize;
@@ -2457,7 +2468,7 @@ ul {
                       }
 
                       p {
-                        font-size: 0.8em;
+                        font-size: 1em;
                         border-bottom: 1.5px solid $newBlack;
                         padding: 0.25rem 0.5rem;
                         text-align: justify;
@@ -2469,17 +2480,20 @@ ul {
                       flex-direction: column;
                       align-items: center;
                       margin: 0rem auto;
+                      text-align: center;
                       // border: 1px solid blue;
 
                       h4 {
                         text-transform: uppercase;
-                        font-size: 0.9em;
+                        font-size: 1em;
                       }
 
                       p {
-                        font-size: 0.8em;
+                        font-size: 1em;
                         padding: 0.25rem 0.5rem;
+                        margin-bottom: 0.2rem;
                         border-bottom: none;
+                        width: 90%;
                       }
                     }
                   }
@@ -2491,6 +2505,7 @@ ul {
                     // flex-direction: column;
                     align-items: center;
                     justify-content: space-evenly;
+                    margin: 1rem 0rem;
                     // border: 1px solid yellow;
 
                     button {
@@ -3240,25 +3255,32 @@ ul {
             .modal-content {
               position: relative;
               width: 90%;
-              height: 60%;
+              height: 50%;
               border-radius: 10px;
               background: #eee;
 
-              .modalCloseBtn {
-                font-size: 1.125em;
-                border-radius: 10px;
+              .closeBtnContainer {
+                width: 100%;
                 height: 2.5rem;
-                width: 3.5rem;
-                // float: right;
-                font-size: 1.5em;
-                text-align: center;
-                cursor: pointer;
+                background-color: $main-accent-color;
+                border-radius: 0px 0px 10px 10px;
                 position: absolute;
-                bottom: 5px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 100;
-                // background-color: $main-accent-color;
+                bottom: 0px;
+
+                .modalCloseBtn {
+                  font-size: 1.125em;
+                  color: #eee;
+                  border-radius: 10px;
+                  font-size: 1.5em;
+                  text-align: center;
+                  cursor: pointer;
+                  position: absolute;
+                  bottom: 5px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  z-index: 100;
+                  // background-color: $main-accent-color;
+                }
               }
 
               .modal-content-info {
@@ -3280,6 +3302,7 @@ ul {
                   align-items: center;
                   // border: 1px solid red;
                   height: 100%;
+                  width: 100%;
 
                   .infoContainer {
                     width: 100%;
@@ -3298,7 +3321,7 @@ ul {
                       }
 
                       p {
-                        font-size: 0.8em;
+                        font-size: 1em;
                         border-bottom: 1.5px solid $newBlack;
                         padding: 0.25rem 0.5rem;
                         text-align: justify;
@@ -3314,11 +3337,11 @@ ul {
 
                       h4 {
                         text-transform: uppercase;
-                        font-size: 0.9em;
+                        font-size: 1em;
                       }
 
                       p {
-                        font-size: 0.8em;
+                        font-size: 1em;
                         padding: 0.25rem 0.5rem;
                         border-bottom: none;
                       }
@@ -3332,6 +3355,7 @@ ul {
                     // flex-direction: column;
                     align-items: center;
                     justify-content: space-evenly;
+                    margin: 1rem 0rem;
                     // border: 1px solid yellow;
 
                     button {
@@ -3972,6 +3996,7 @@ ul {
             h1 {
               position: absolute;
               top: 3rem;
+              // margin-bottom: 3rem;
               font-size: 2.5em;
               color: #eee;
               background-color: $main-accent-color;
@@ -4093,10 +4118,8 @@ ul {
 
           .modal-content {
             position: relative;
-            // height: 100%;
             width: 650px;
-            // height: 450px;
-            height: 430px;
+            height: 440px;
             border-radius: 10px;
             background: #eee;
             display: flex;
@@ -4151,7 +4174,7 @@ ul {
                   // flex-direction: column;
                   width: 100%;
                   height: 100%;
-                  border: 2px solid orange;
+                  // border: 2px solid orange;
 
                   // display: none;
 
@@ -4176,7 +4199,7 @@ ul {
                     }
                   }
                   .projectMoreInfo {
-                    border: 2px solid yellow;
+                    // border: 2px solid yellow;
                     height: 100%;
                     width: 100%;
                     // margin: 1rem 0px;
@@ -4194,6 +4217,7 @@ ul {
                         font-size: 1em;
                         padding: 0.5rem 1rem;
                         border-bottom: none;
+                        text-align: start;
                       }
                     }
 
@@ -4220,6 +4244,10 @@ ul {
                         font-size: 2.5em;
                       }
                     }
+                  }
+
+                  .topPadding {
+                    margin-top: 2rem;
                   }
                 }
 

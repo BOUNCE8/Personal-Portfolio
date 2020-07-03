@@ -676,19 +676,25 @@ ul li {
     border-radius: 10px;
     background: #eee;
   }
-  .site-container-inner #work-section .modal .modal-content .modalCloseBtn {
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer {
+    width: 100%;
+    height: 2.25rem;
+    background-color: #e44d26;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer .modalCloseBtn {
+    color: #eee;
+    text-align: center;
     font-size: 1.125em;
-    border-radius: 10px;
-    height: 2.5rem;
-    width: 3.5rem;
-    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    bottom: 5px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     z-index: 100;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info {
@@ -1020,7 +1026,6 @@ ul li {
   .site-container .hamburger-container-inner {
     width: 100%;
     height: 100%;
-    /* background: paleturquoise; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1237,7 +1242,6 @@ ul li {
     height: 50%;
     position: relative;
     display: inline-block;
-    border: yellow 2px solid;
   }
   .site-container-inner #hero-section #part1 .hero-banner {
     top: 70%;
@@ -1250,7 +1254,6 @@ ul li {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     border-radius: 5px;
-    border: 2px red solid;
   }
   .site-container-inner #hero-section #part1 .hero-banner #heroTitle {
     font-size: 1em;
@@ -1273,7 +1276,6 @@ ul li {
   .site-container-inner #hero-section #part2 {
     width: 100%;
     height: 49%;
-    border: 2px solid purple;
     display: inline-block;
     position: relative;
   }
@@ -1589,24 +1591,30 @@ ul li {
   }
   .site-container-inner #work-section .modal .modal-content {
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     border-radius: 10px;
     background: #eee;
   }
-  .site-container-inner #work-section .modal .modal-content .modalCloseBtn {
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer {
+    width: 100%;
+    height: 2.25rem;
+    background-color: #e44d26;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer .modalCloseBtn {
+    color: #eee;
+    text-align: center;
     font-size: 1.125em;
-    border-radius: 10px;
-    height: 2.5rem;
-    width: 3.5rem;
-    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    bottom: 5px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     z-index: 100;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info {
@@ -1654,6 +1662,7 @@ ul li {
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.85);
     padding: 0.25rem 0.5rem;
     text-align: justify;
+    display: none;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints {
     display: -webkit-box;
@@ -2171,10 +2180,10 @@ ul li {
     display: inline-block;
   }
   .site-container-inner #hero-section #part1 .hero-banner {
-    top: 50%;
+    top: 60%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
     width: 60%;
     position: absolute;
     background-color: #e44d26;
@@ -2208,7 +2217,7 @@ ul li {
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     position: absolute;
-    bottom: 25%;
+    bottom: 30%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -2528,15 +2537,22 @@ ul li {
   .site-container-inner #work-section .work-section-container .modal .modal-content {
     position: relative;
     width: 90%;
-    height: 60%;
+    height: 45%;
     border-radius: 10px;
     background: #eee;
   }
-  .site-container-inner #work-section .work-section-container .modal .modal-content .modalCloseBtn {
-    font-size: 1.125em;
-    border-radius: 10px;
+  .site-container-inner #work-section .work-section-container .modal .modal-content .closeBtnContainer {
+    width: 100%;
     height: 2.5rem;
-    width: 3.5rem;
+    background-color: #e44d26;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .site-container-inner #work-section .work-section-container .modal .modal-content .closeBtnContainer .modalCloseBtn {
+    font-size: 1.125em;
+    color: #eee;
+    border-radius: 10px;
     font-size: 1.5em;
     text-align: center;
     cursor: pointer;
@@ -2550,6 +2566,7 @@ ul li {
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info {
     position: absolute;
     top: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2561,6 +2578,7 @@ ul li {
     padding: 0rem 0rem;
     border-radius: 10px;
     background-color: linear-gradient(to bottom right, white, #bbbbbb);
+    border: 2px solid salmon;
     display: none;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject {
@@ -2577,6 +2595,8 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio {
     padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio h3 {
     text-transform: capitalize;
@@ -2588,7 +2608,7 @@ ul li {
     padding: 0.5rem;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio p {
-    font-size: 0.8em;
+    font-size: 1em;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.85);
     padding: 0.25rem 0.5rem;
     text-align: justify;
@@ -2605,15 +2625,18 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
     margin: 0rem auto;
+    text-align: center;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints h4 {
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints p {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0.25rem 0.5rem;
+    margin-bottom: 0.2rem;
     border-bottom: none;
+    width: 90%;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container {
     width: 100%;
@@ -2627,6 +2650,7 @@ ul li {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 1rem 0rem;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container button {
     width: 50px;
@@ -3451,15 +3475,22 @@ ul li {
   .site-container-inner #work-section .work-section-container .modal .modal-content {
     position: relative;
     width: 90%;
-    height: 60%;
+    height: 50%;
     border-radius: 10px;
     background: #eee;
   }
-  .site-container-inner #work-section .work-section-container .modal .modal-content .modalCloseBtn {
-    font-size: 1.125em;
-    border-radius: 10px;
+  .site-container-inner #work-section .work-section-container .modal .modal-content .closeBtnContainer {
+    width: 100%;
     height: 2.5rem;
-    width: 3.5rem;
+    background-color: #e44d26;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .site-container-inner #work-section .work-section-container .modal .modal-content .closeBtnContainer .modalCloseBtn {
+    font-size: 1.125em;
+    color: #eee;
+    border-radius: 10px;
     font-size: 1.5em;
     text-align: center;
     cursor: pointer;
@@ -3494,6 +3525,7 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    width: 100%;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer {
     width: 100%;
@@ -3511,7 +3543,7 @@ ul li {
     padding: 0.5rem;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio p {
-    font-size: 0.8em;
+    font-size: 1em;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.85);
     padding: 0.25rem 0.5rem;
     text-align: justify;
@@ -3531,10 +3563,10 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints h4 {
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints p {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 0.25rem 0.5rem;
     border-bottom: none;
   }
@@ -3550,6 +3582,7 @@ ul li {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 1rem 0rem;
   }
   .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container button {
     width: 50px;
@@ -4358,7 +4391,7 @@ ul li {
   .site-container-inner #work-section .modal .modal-content {
     position: relative;
     width: 650px;
-    height: 430px;
+    height: 440px;
     border-radius: 10px;
     background: #eee;
     display: -webkit-box;
@@ -4421,7 +4454,6 @@ ul li {
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer {
     width: 100%;
     height: 100%;
-    border: 2px solid orange;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio h3 {
     font-size: 1.7em;
@@ -4440,7 +4472,6 @@ ul li {
     text-align: justify;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo {
-    border: 2px solid yellow;
     height: 100%;
     width: 100%;
     padding: 0.5rem 0rem;
@@ -4461,6 +4492,7 @@ ul li {
     font-size: 1em;
     padding: 0.5rem 1rem;
     border-bottom: none;
+    text-align: start;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .icon-container {
     width: 100%;
@@ -4487,6 +4519,9 @@ ul li {
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .icon-container .skill-icon {
     font-size: 2.5em;
+  }
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .topPadding {
+    margin-top: 2rem;
   }
   .site-container-inner #work-section .modal .modal-content #projectImage-1-modal {
     display: none;
