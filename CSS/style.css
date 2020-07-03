@@ -222,6 +222,96 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
     background-image: url("https://unsplash.it/1250/1500");
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    border-radius: 0px 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .site-container-inner #hero-section .contactContainer-form {
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #eee;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-container-inner #hero-section .contactContainer-form form {
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer-form form label {
+    font-size: 0.75em;
+    margin-left: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form input {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn {
+    cursor: pointer;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn i {
+    font-size: 1.75em;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box button {
+    width: 75px;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e44d26;
+    color: #eee;
+    font-size: 1em;
+    padding: 0.5rem 0rem;
+    border: none;
   }
   .site-container-inner #hero-section #part1 {
     width: 100%;
@@ -264,83 +354,6 @@ ul li {
     height: 50%;
     display: inline-block;
     position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer {
-    width: 100%;
-    height: 410px;
-    background-color: #e44d26;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    position: absolute;
-    top: 410px;
-    right: 0;
-    z-index: 5;
-    position: relative;
-    visibility: visible;
-    -webkit-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
-    border-radius: 0px 0px 0px 5px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn i {
-    font-size: 1.75em;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form {
-    height: 375px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form {
-    width: 90%;
-    padding: 0.25rem 0.5rem;
-    position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form label {
-    font-size: 0.75em;
-    margin-left: 0.25rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form input {
-    width: 100%;
-    height: 1.75rem;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form textarea {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem 0rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box button {
-    width: 75px;
-    margin: 0px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     width: 200px;
@@ -807,7 +820,6 @@ ul li {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   }
   .site-container-inner #work-section .project-container {
-    height: 50%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -823,7 +835,7 @@ ul li {
   }
   .site-container-inner #work-section .project-container .project {
     width: 295px;
-    height: 75px;
+    height: 45px;
     display: block;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -899,7 +911,8 @@ ul li {
     background-position: 0% 42.5%;
   }
   .site-container-inner #work-section .project-container .project #projectImage-4,
-  .site-container-inner #work-section .project-container .project #projectImage-5 {
+  .site-container-inner #work-section .project-container .project #projectImage-5,
+  .site-container-inner #work-section .project-container .project #projectImage-6 {
     background-image: url(/Images/ScreenShot/comingSoon.jpg);
     background-position: center;
     background-size: cover;
@@ -950,9 +963,6 @@ ul li {
   }
   .site-container-inner #work-section .project-container .project .techStack-container #icon-4 {
     color: #f0d91d;
-  }
-  .site-container-inner #work-section .project-container #projectContainer-6 {
-    display: none;
   }
 }
 
@@ -1133,6 +1143,94 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
     background-image: url("https://unsplash.it/1250/1500");
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    border-radius: 0px 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-container-inner #hero-section .contactContainer-form {
+    height: 95%;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form {
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer-form form label {
+    font-size: 0.75em;
+    margin-left: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form input {
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 0.15rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn {
+    cursor: pointer;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn i {
+    font-size: 1.75em;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box button {
+    width: 75px;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e44d26;
+    color: #eee;
+    font-size: 1em;
+    padding: 0.25rem 0rem;
+    border: none;
   }
   .site-container-inner #hero-section #part1 {
     width: 100%;
@@ -1178,83 +1276,6 @@ ul li {
     border: 2px solid purple;
     display: inline-block;
     position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer {
-    width: 100%;
-    height: 410px;
-    background-color: #e44d26;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    position: absolute;
-    top: -410px;
-    right: 0;
-    z-index: 5;
-    position: relative;
-    visibility: hidden;
-    -webkit-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
-    border-radius: 0px 0px 0px 5px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn i {
-    font-size: 1.75em;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form {
-    height: 375px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form {
-    width: 90%;
-    padding: 0.25rem 0.5rem;
-    position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form label {
-    font-size: 0.75em;
-    margin-left: 0.25rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form input {
-    width: 100%;
-    height: 1.75rem;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form textarea {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem 0rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box button {
-    width: 75px;
-    margin: 0px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     width: 200px;
@@ -1422,15 +1443,17 @@ ul li {
     padding: 0.5rem 0rem;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     display: block;
     text-transform: uppercase;
     color: #eee;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #e44d26;
     padding: 0.25rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 0rem;
     margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline h2 {
     font-size: 1em;
@@ -1450,14 +1473,14 @@ ul li {
             align-items: center;
     width: 50%;
     text-align: center;
-    border: 2px lime solid;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .firstStage {
-    width: 100%;
+    width: 95%;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .firstStage .stages {
     width: 100%;
     margin: 0rem;
+    background-color: rgba(0, 0, 0, 0.85);
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages {
     width: 100%;
@@ -1517,8 +1540,8 @@ ul li {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     font-size: 0.9em;
-    margin: 0.25rem 0rem;
-    padding: 0.1rem 0.25rem;
+    margin: 0.5rem 0rem;
+    padding: 0.25rem 0.25rem;
     border-radius: 10px;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages-text .stages-subtext div {
@@ -1743,7 +1766,7 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .project-container .project {
     width: 175px;
-    height: 90px;
+    height: 50px;
     display: block;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1820,9 +1843,10 @@ ul li {
     background-position: 0% 42.5%;
   }
   .site-container-inner #work-section .work-section-container .project-container .project #projectImage-4,
-  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-5 {
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-5,
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-6 {
     background-image: url(/Images/ScreenShot/comingSoon.jpg);
-    background-position: 0% 42.5%;
+    background-position: 0% 33%;
     background-size: cover;
   }
   .site-container-inner #work-section .work-section-container .project-container .project h4 {
@@ -1871,10 +1895,6 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .project-container .project .techStack-container #icon-4 {
     color: #f0d91d;
-  }
-  .site-container-inner #work-section .work-section-container .project-container #projectContainer-5,
-  .site-container-inner #work-section .work-section-container .project-container #projectContainer-6 {
-    display: none;
   }
 }
 
@@ -2055,13 +2075,100 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
     background-image: url("https://unsplash.it/1250/1500");
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    border-radius: 0px 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-container-inner #hero-section .contactContainer-form {
+    height: 400px;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eee;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form {
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer-form form label {
+    font-size: 0.75em;
+    margin-left: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form input {
+    width: 100%;
+    height: 1.75rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn {
+    cursor: pointer;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn i {
+    font-size: 1.75em;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box button {
+    width: 75px;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e44d26;
+    color: #eee;
+    font-size: 1em;
+    border: none;
+    padding: 0.25rem 0rem;
   }
   .site-container-inner #hero-section #part1 {
     width: 100%;
     height: 50%;
     position: relative;
     display: inline-block;
-    border: yellow 2px solid;
   }
   .site-container-inner #hero-section #part1 .hero-banner {
     top: 50%;
@@ -2074,7 +2181,6 @@ ul li {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     border-radius: 5px;
-    border: 2px red solid;
   }
   .site-container-inner #hero-section #part1 .hero-banner #heroTitle {
     font-size: 1em;
@@ -2097,86 +2203,8 @@ ul li {
   .site-container-inner #hero-section #part2 {
     width: 100%;
     height: 50%;
-    border: 2px solid purple;
     display: inline-block;
     position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer {
-    width: 100%;
-    height: 410px;
-    background-color: #e44d26;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    position: absolute;
-    top: -410px;
-    right: 0;
-    z-index: 5;
-    position: relative;
-    visibility: hidden;
-    -webkit-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
-    border-radius: 0px 0px 0px 5px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn i {
-    font-size: 1.75em;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form {
-    height: 375px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form {
-    width: 90%;
-    padding: 0.25rem 0.5rem;
-    position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form label {
-    font-size: 0.75em;
-    margin-left: 0.25rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form input {
-    width: 100%;
-    height: 1.75rem;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form textarea {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem 0rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box button {
-    width: 75px;
-    margin: 0px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     position: absolute;
@@ -2195,7 +2223,6 @@ ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: solid 2px pink;
     width: 70%;
   }
   .site-container-inner #hero-section #part2 .heroNavigation h2 {
@@ -2344,7 +2371,7 @@ ul li {
     font-size: 3em;
     text-transform: uppercase;
     color: #eee;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #e44d26;
     padding: 0.5rem 0.7rem;
     border-radius: 10px;
     margin-bottom: 0.5rem;
@@ -2374,8 +2401,9 @@ ul li {
     width: 100%;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .firstStage .stages {
-    width: 100%;
-    margin: 0rem;
+    width: 94%;
+    margin: 0rem auto;
+    background-color: rgba(0, 0, 0, 0.85);
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages {
     width: 100%;
@@ -2433,13 +2461,12 @@ ul li {
     font-size: 0.9em;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages-text .stages-subtext li {
-    height: 2rem;
     color: rgba(0, 0, 0, 0.85);
     background-color: #eee;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     margin: 0.75rem 0rem;
-    padding: 0.1rem 0.25rem;
+    padding: 0.5rem 0.25rem;
     border-radius: 10px;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages-text .stages-subtext div {
@@ -2501,7 +2528,7 @@ ul li {
   .site-container-inner #work-section .work-section-container .modal .modal-content {
     position: relative;
     width: 90%;
-    height: 90%;
+    height: 60%;
     border-radius: 10px;
     background: #eee;
   }
@@ -2702,7 +2729,7 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .project-container .project .project-image h1 {
     color: #eee;
-    font-size: 2em;
+    font-size: 2.75em;
   }
   .site-container-inner #work-section .work-section-container .project-container .project .project-image > * {
     position: relative;
@@ -2742,9 +2769,10 @@ ul li {
     background-position: 0% 42.5%;
   }
   .site-container-inner #work-section .work-section-container .project-container .project #projectImage-4,
-  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-5 {
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-5,
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-6 {
     background-image: url(/Images/ScreenShot/comingSoon.jpg);
-    background-position: 0% 42.5%;
+    background-position: 0% 37%;
     background-size: cover;
   }
   .site-container-inner #work-section .work-section-container .project-container .project h4 {
@@ -2796,7 +2824,10 @@ ul li {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .mobView {
+    display: none;
+  }
   .site-container {
     position: relative;
     width: 100%;
@@ -2966,6 +2997,10 @@ ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2974,27 +3009,116 @@ ul li {
             align-items: center;
     background-image: url("https://unsplash.it/1250/1500");
     border-right: #e44d26 2px solid;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    border-radius: 0px 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-container-inner #hero-section .contactContainer-form {
+    height: 400px;
+    width: 60%;
+    background-color: #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form {
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer-form form label {
+    font-size: 0.75em;
+    margin-left: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form input {
+    width: 100%;
+    height: 1.75rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form textarea {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn {
+    cursor: pointer;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn i {
+    font-size: 1.75em;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box button {
+    width: 75px;
+    margin: 0px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e44d26;
+    color: #eee;
+    font-size: 1em;
+    padding: 0.25rem 0rem;
+    border: none;
   }
   .site-container-inner #hero-section #part1 {
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     position: relative;
     display: inline-block;
   }
   .site-container-inner #hero-section #part1 .hero-banner {
-    top: 50%;
+    top: 60%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 85%;
+    -webkit-transform: translate(-50%, -60%);
+            transform: translate(-50%, -60%);
+    width: 65%;
     position: absolute;
     background-color: #e44d26;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    border-radius: 5px;
+    border-radius: 10px;
   }
   .site-container-inner #hero-section #part1 .hero-banner #heroTitle {
-    font-size: 2.5em;
+    font-size: 2.25em;
+    padding: 0.5rem 0.7rem;
     text-align: center;
     line-height: 0.9em;
     text-transform: capitalize;
@@ -3012,95 +3136,18 @@ ul li {
     padding: 0.5rem 0rem;
   }
   .site-container-inner #hero-section #part2 {
-    width: 39.65%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     display: inline-block;
     position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer {
-    width: 100%;
-    height: 410px;
-    background-color: #e44d26;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    position: absolute;
-    top: -410px;
-    right: 0;
-    z-index: 5;
-    position: relative;
-    visibility: hidden;
-    -webkit-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
-    border-radius: 0px 0px 0px 5px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn i {
-    font-size: 1.75em;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form {
-    height: 375px;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form {
-    width: 90%;
-    padding: 0.25rem 0.5rem;
-    position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form label {
-    font-size: 0.75em;
-    margin-left: 0.25rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form input {
-    width: 100%;
-    height: 1.75rem;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form textarea {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem 0rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box button {
-    width: 75px;
-    margin: 0px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     width: 100%;
     position: absolute;
-    bottom: 25px;
+    top: 40%;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3255,6 +3302,9 @@ ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 10px;
     position: relative;
   }
@@ -3265,11 +3315,12 @@ ul li {
     color: #eee;
     background-color: #e44d26;
     padding: 0.75rem 1.25rem;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process {
     height: 55%;
-    width: 45%;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3277,13 +3328,17 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0.5rem 0rem;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .firstStage {
-    width: 400px;
+    width: 95%;
+    margin: 0 auto;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .firstStage .stages {
     width: 100%;
@@ -3293,7 +3348,7 @@ ul li {
     background-size: cover;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline .process .stages {
-    width: 175px;
+    width: 165px;
     height: 3rem;
     margin: 0.5rem auto;
     padding: 0.25rem 0.5rem;
@@ -3327,6 +3382,9 @@ ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     top: 10px;
     font-size: 1.15em;
@@ -3348,7 +3406,7 @@ ul li {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
     margin: 1rem 0rem;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 10px;
   }
   .site-container-inner #work-section {
@@ -3363,7 +3421,20 @@ ul li {
     border-right: #e44d26 2px solid;
     position: relative;
   }
-  .site-container-inner #work-section .modal {
+  .site-container-inner #work-section .work-section-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .site-container-inner #work-section .work-section-container .modal {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3375,30 +3446,31 @@ ul li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 100;
   }
-  .site-container-inner #work-section .modal .modal-content {
+  .site-container-inner #work-section .work-section-container .modal .modal-content {
     position: relative;
-    width: 650px;
-    height: 500px;
+    width: 90%;
+    height: 60%;
     border-radius: 10px;
     background: #eee;
   }
-  .site-container-inner #work-section .modal .modal-content .modalCloseBtn {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modalCloseBtn {
+    font-size: 1.125em;
     border-radius: 10px;
     height: 2.5rem;
-    width: 5rem;
-    text-align: center;
-    font-size: 1.25em;
+    width: 3.5rem;
+    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    bottom: 2.5px;
+    bottom: 5px;
+    left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    left: 50%;
     z-index: 100;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info {
     position: absolute;
     top: 0;
     display: -webkit-box;
@@ -3412,21 +3484,24 @@ ul li {
     padding: 0rem 0rem;
     border-radius: 10px;
     background-color: linear-gradient(to bottom right, white, #bbbbbb);
+    display: none;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    -webkit-box-align: top;
-        -ms-flex-align: top;
-            align-items: top;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer {
     width: 100%;
-    border: 2px solid orange;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio h3 {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio {
+    padding-bottom: 0.5rem;
+  }
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio h3 {
     text-transform: capitalize;
     text-align: center;
     background-color: #e44d26;
@@ -3435,30 +3510,35 @@ ul li {
     margin: 0 auto;
     padding: 0.5rem;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio p {
-    font-size: 1em;
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio p {
+    font-size: 0.8em;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.85);
-    padding: 0.75rem 1rem;
+    padding: 0.25rem 0.5rem;
     text-align: justify;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0rem auto;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints h4 {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints h4 {
     text-transform: uppercase;
+    font-size: 0.9em;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints p {
-    font-size: 1em;
-    padding: 0.5rem 1rem;
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints p {
+    font-size: 0.8em;
+    padding: 0.25rem 0.5rem;
     border-bottom: none;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container {
     width: 100%;
     height: 50px;
     display: -webkit-box;
@@ -3467,8 +3547,11 @@ ul li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container button {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container button {
     width: 50px;
     padding: 0.25rem 0.5rem;
     margin: 0.5rem 0rem;
@@ -3477,47 +3560,47 @@ ul li {
     border-radius: 5px;
     border: none;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container .skill-icon {
+  .site-container-inner #work-section .work-section-container .modal .modal-content .modal-content-info .modalProject .icon-container .skill-icon {
     font-size: 2.5em;
   }
-  .site-container-inner #work-section .modal .modal-content #projectImage-1-modal {
+  .site-container-inner #work-section .work-section-container .modal .modal-content #projectImage-1-modal {
     display: none;
   }
-  .site-container-inner #work-section .modal .modal-content #projectImage-2-modal {
+  .site-container-inner #work-section .work-section-container .modal .modal-content #projectImage-2-modal {
     display: none;
   }
-  .site-container-inner #work-section .modal .modal-content #projectImage-3-modal {
+  .site-container-inner #work-section .work-section-container .modal .modal-content #projectImage-3-modal {
     display: none;
   }
-  .site-container-inner #work-section .work-section-container {
-    height: 100%;
+  .site-container-inner #work-section .work-section-container .titleContainer {
+    height: 10%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
   }
-  .site-container-inner #work-section .work-section-container h2 {
-    font-size: 2.5em;
+  .site-container-inner #work-section .work-section-container .titleContainer h2 {
+    font-size: 3em;
     text-align: center;
     text-transform: uppercase;
     color: #eee;
-    padding: 0.75rem 1.25rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
     background-color: #e44d26;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    margin-bottom: 2rem;
-    border-radius: 10px;
   }
   .site-container-inner #work-section .work-section-container .project-container {
-    height: 62.5%;
-    width: 100%;
+    height: 100%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3531,8 +3614,8 @@ ul li {
             align-items: center;
   }
   .site-container-inner #work-section .work-section-container .project-container .project {
-    width: 325px;
-    height: 175px;
+    width: 100%;
+    height: 80px;
     display: block;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -3542,27 +3625,81 @@ ul li {
             align-items: center;
     margin-top: 0rem;
     cursor: pointer;
-    margin: 0.75rem 0rem;
+    margin: 12px 0px;
+    position: relative;
   }
   .site-container-inner #work-section .work-section-container .project-container .project .project-image {
     width: 100%;
     height: 100%;
+    opacity: 1;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project .project-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1;
+    border-radius: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project .project-image h1 {
+    color: #eee;
+    font-size: 2.75em;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project .project-image > * {
+    position: relative;
+    z-index: 10;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project .project-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.45)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45));
+    z-index: 1;
   }
   .site-container-inner #work-section .work-section-container .project-container .project #projectImage-1 {
     background-image: url(/Images/ScreenShot/KaycieKyle/nails-2.jpg);
+    background-color: pink;
     background-position: 0% 60%;
+    background-size: cover;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-1-hover {
+    background-color: pink;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    border-radius: 10px;
   }
   .site-container-inner #work-section .work-section-container .project-container .project #projectImage-2 {
     background-image: url(/Images/ScreenShot/AndrewsFishBar/hero-image2.jpg);
     background-position: 0% 60%;
+    background-size: cover;
   }
   .site-container-inner #work-section .work-section-container .project-container .project #projectImage-3 {
     background-image: url(/Images/ScreenShot/Netflix/main-image.png);
     background-position: 0% 42.5%;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-4,
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-5,
+  .site-container-inner #work-section .work-section-container .project-container .project #projectImage-6 {
+    background-image: url(/Images/ScreenShot/comingSoon.jpg);
+    background-position: 0% 37%;
+    background-size: cover;
+  }
+  .site-container-inner #work-section .work-section-container .project-container .project #projectContainer-6 {
+    display: none;
   }
   .site-container-inner #work-section .work-section-container .project-container .project h4 {
     margin: 0;
@@ -3579,7 +3716,7 @@ ul li {
     color: #eee;
     padding: 0.2rem 0.3rem;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3596,26 +3733,20 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container .skill-icon {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container .skill-icon {
     font-size: 2.5em;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container #icon-1 {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container #icon-1 {
     color: #e44d26;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container #icon-2 {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container #icon-2 {
     color: #264de4;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container #icon-3 {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container #icon-3 {
     color: #cf649a;
   }
-  .site-container-inner #work-section .work-section-container .project-container .techStack-container #icon-4 {
+  .site-container-inner #work-section .work-section-container .project-container .project .techStack-container #icon-4 {
     color: #f0d91d;
-  }
-  .site-container-inner #work-section .work-section-container #projectContainer-5,
-  .site-container-inner #work-section .work-section-container #projectContainer-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -3804,6 +3935,91 @@ ul li {
             align-items: center;
     background-image: url("https://unsplash.it/1250/1500");
     border-right: #e44d26 2px solid;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    visibility: hidden;
+    -webkit-transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.5s;
+    border-radius: 0px 0px 0px 5px;
+  }
+  .site-container-inner #hero-section .contactContainer-form {
+    height: 400px;
+    width: 60%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #eee;
+    padding-top: 0.75rem;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form {
+    width: 90%;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+  }
+  .site-container-inner #hero-section .contactContainer-form form label {
+    font-size: 1em;
+    margin-left: 0.25rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form input {
+    width: 100%;
+    height: 1.75rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form textarea {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box button {
+    width: 100px;
+    margin: 5px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e44d26;
+    color: #eee;
+    font-size: 1.5em;
+    padding: 0.25rem 0rem;
+    border: none;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn {
+    cursor: pointer;
+  }
+  .site-container-inner #hero-section .contactContainer-form form .btn-box .closeBtn i {
+    font-size: 1.75em;
   }
   .site-container-inner #hero-section #part1 {
     width: 100%;
@@ -3846,88 +4062,6 @@ ul li {
     height: 52%;
     display: inline-block;
     position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer {
-    width: 100%;
-    height: 410px;
-    background-color: #e44d26;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.1)));
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    position: absolute;
-    top: -410px;
-    right: 0;
-    z-index: 5;
-    position: relative;
-    visibility: hidden;
-    -webkit-transition: ease-in-out 0.5s;
-    transition: ease-in-out 0.5s;
-    border-radius: 0px 0px 0px 5px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer .closeBtn i {
-    font-size: 1.75em;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form {
-    height: 375px;
-    width: 60%;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -45%);
-            transform: translate(-50%, -45%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: 2px solid #000;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form {
-    width: 90%;
-    padding: 0.25rem 0.5rem;
-    position: relative;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form label {
-    font-size: 1em;
-    margin-left: 0.25rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form input {
-    width: 100%;
-    height: 1.75rem;
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form textarea {
-    width: 100%;
-    height: 100px;
-    border-radius: 10px;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0.5rem 0rem;
-  }
-  .site-container-inner #hero-section #part2 .contactContainer-form form .btn-box button {
-    width: 100px;
-    height: 30px;
-    margin: 5px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .site-container-inner #hero-section #part2 .heroNavigation {
     width: 100%;
@@ -4091,6 +4225,8 @@ ul li {
     position: relative;
   }
   .site-container-inner #skills-section .skill-section-container .myProcessTimeline h1 {
+    position: absolute;
+    top: 3rem;
     font-size: 2.5em;
     color: #eee;
     background-color: #e44d26;
@@ -4222,34 +4358,49 @@ ul li {
   .site-container-inner #work-section .modal .modal-content {
     position: relative;
     width: 650px;
-    height: 425px;
+    height: 430px;
     border-radius: 10px;
     background: #eee;
-  }
-  .site-container-inner #work-section .modal .modal-content .modalCloseBtn {
-    border-radius: 10px;
-    height: 2.5rem;
-    width: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     text-align: center;
-    font-size: 1.25em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #e44d26;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+  }
+  .site-container-inner #work-section .modal .modal-content .closeBtnContainer .modalCloseBtn {
+    color: #eee;
+    text-align: center;
+    font-size: 1.75em;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    bottom: 2.5px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
     z-index: 100;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info {
     position: absolute;
-    top: 0;
+    top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
     height: 100%;
     padding: 0rem 0rem;
@@ -4269,9 +4420,11 @@ ul li {
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer {
     width: 100%;
+    height: 100%;
     border: 2px solid orange;
   }
   .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .project-bio h3 {
+    font-size: 1.7em;
     text-transform: capitalize;
     text-align: center;
     background-color: #e44d26;
@@ -4286,7 +4439,13 @@ ul li {
     padding: 0.75rem 1rem;
     text-align: justify;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo {
+    border: 2px solid yellow;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 0rem;
+  }
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .fourPoints {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4295,20 +4454,21 @@ ul li {
             align-items: center;
     margin: 0rem 1rem;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints h4 {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .fourPoints h4 {
     text-transform: uppercase;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .fourPoints p {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .fourPoints p {
     font-size: 1em;
     padding: 0.5rem 1rem;
     border-bottom: none;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .icon-container {
     width: 100%;
     height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0.75rem 0rem;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -4316,7 +4476,7 @@ ul li {
         -ms-flex-align: center;
             align-items: center;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container button {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .icon-container button {
     width: 50px;
     padding: 0.25rem 0.5rem;
     margin: 0.5rem 0rem;
@@ -4325,7 +4485,7 @@ ul li {
     border-radius: 5px;
     border: none;
   }
-  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .icon-container .skill-icon {
+  .site-container-inner #work-section .modal .modal-content .modal-content-info .modalProject .infoContainer .projectMoreInfo .icon-container .skill-icon {
     font-size: 2.5em;
   }
   .site-container-inner #work-section .modal .modal-content #projectImage-1-modal {
@@ -4408,6 +4568,7 @@ ul li {
     margin: 0.75rem 0rem;
   }
   .site-container-inner #work-section .work-section-container .project-container .project .project-image {
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4514,11 +4675,5 @@ ul li {
   }
   .site-container-inner #work-section .work-section-container .project-container .techStack-container #icon-4 {
     color: #f0d91d;
-  }
-  .site-container-inner #work-section .work-section-container #projectContainer-5,
-  .site-container-inner #work-section .work-section-container #projectContainer-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }

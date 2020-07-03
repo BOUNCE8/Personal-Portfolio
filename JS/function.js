@@ -76,13 +76,15 @@ const dropDownMenu = document.querySelector('.sticky-nav-container')
     
 // Hamburger - Drop down menu function
 
+// Contact Form - contact form function - START
+
 const contactBtn = document.querySelector('#contactBtn');
 const contactForm = document.querySelector('.contactContainer');
 const closeBtn = document.querySelector('.closeBtn');
 
 function showContactForm() {
     contactBtn.addEventListener('click', function(){
-        contactForm.style.transform = "translateY(410px)";
+        
         contactForm.style.visibility = "visible";
     })
 }
@@ -90,12 +92,14 @@ function showContactForm() {
 function closeContactForm() {
     closeBtn.addEventListener('click', function(){
         contactForm.style.visibility = "hidden";
-        contactForm.style.transform = "translateY(-410px)"
+        
     })
 }
 
 showContactForm()
 closeContactForm()
+
+// Contact Form - contact form function - END
 
 const projectImage = document.querySelector('.project-image')
 const modal = document.querySelector('.modal');
